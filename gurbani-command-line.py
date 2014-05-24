@@ -40,6 +40,8 @@ def main():
 		print "----    for shabads from your terminal!   ----"
 		print "----                                      ----"
 		print "----    Search by first letters           ----"
+		print "----    Or enter the Shabad ID            ----"
+		print "----                                      ----"
 		print "----    Enter 'quit' to exit              ----"
 		print "----------------------------------------------"
 		inputItem = raw_input()
