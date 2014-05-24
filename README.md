@@ -1,5 +1,6 @@
-iGurbani Command Line Interface
+Gurbani Search Command Line
 ===========================================
+Using iGurbani.com
 #### Easily search for shabads using your terminal :)
 
 #### How to use it
