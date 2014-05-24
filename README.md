@@ -19,5 +19,5 @@ View the shabad with the ID:
 `1528`
 
 
-More features to come soon. Maybe.
+More features to come soon.
 
