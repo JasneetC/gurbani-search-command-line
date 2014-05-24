@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # set requests
 #http://igurbani.com/iGurbaniService.php?&mode=1&q=gmsshn&src=0&type=0&writer=0&raag=0&ang=&recnum=0&format=json
 #http://igurbani.com/iGurbaniService.php?&mode=2&shabadNo=1528&format=json
@@ -17,11 +19,13 @@ def searchShabadWithID(shabadID):
 	params = dict(mode=2,shabadNo=shabadID,format="json")
 	resp = requests.get(url=url, params=params)
 	data = resp.json()
+	print "        "
 	for shabad in data['gurbani']:
 		# convert the line
-		gurmukhi = convert.convertLine([shabad][0]['shabad']['Gurmukhi'])
-		print gurmukhi
-		print " "
+		# gurmukhi does not display well yet
+		#gurmukhi = convert.convertLine([shabad][0]['shabad']['Gurmukhi'])
+		#print gurmukhi
+		#print " "
 		print [shabad][0]['shabad']['Transliteration']
 		print " "
 		print [shabad][0]['shabad']['English']
